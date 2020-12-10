@@ -10,9 +10,15 @@ public class Band extends Music {
         this.members = members;
     }
 
+    public static Band createBand(String name, String style, String instruments, int members ) {
+        return new Band(name, style, instruments, members);
+    }
+
     public int getMembers() {
         return members;
     }
+
+
 
     public String getInstruments() {
         return instruments;
